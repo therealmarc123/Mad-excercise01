@@ -9,7 +9,6 @@
 ## Questions
 ### Describe how Kotlin handles null safety. What are nullable types and non-null types in Kotlin? (0,5 points)
 
-<span style="color:blue">Provide your answer here! </span>
 > Note: you can also use code snippets to illustrate your answer. 
 
 <span style="color:blue"> Answer: Kotlin defines all Types as non-null by default! This implies that also by default null pointer exceptions are prevented during the complietime already rather than assertion at runtime.
@@ -38,7 +37,18 @@ Now a can hold the value null
 
 ### What are lambda expressions and higher order functions in Kotlin? Why would you store a function inside a variable? (0,5 points)
 
-<span style="color:blue">Provide your answer here!</span>
+<span style="color:blue">The Lambda expressions are short, anonymous functions defined with {} and can take parameters and return values. It is possible to use Lambda expressions wherever a function type is expected.
+The full syntax includes the parameter names, an arrow ->, and the body of the function. For example:
+
+two integers are taken and their sum is returned through the lamda expression.
+```kotlin 
+val sum = { a: Int, b: Int -> a + b }
+```
+
+
+
+
+</span>
 
 ### Provide a solution for the following number guessing game inside `App.kt`. (3 points)
 
