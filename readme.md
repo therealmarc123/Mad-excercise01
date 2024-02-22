@@ -12,10 +12,27 @@
 <span style="color:blue">Provide your answer here! </span>
 > Note: you can also use code snippets to illustrate your answer. 
 
+
+> Answer: Kotlin defines all Types as non-null by default! This implies that also by default null pointer exceptions are prevented during the complietime already rather than assertion at runtime.
+> So, a type of variable cannot be null, no matter the type. If this happens anyway an complie error will appear! 
+
 ```kotlin 
-// example code snippet
 val a: String = "value" // non-null type
 ```
+> This obviosly works, because there is no null value is involved!
+
+```kotlin 
+val a: String = null // non-null type
+```
+> This won't work, it will lead to an error during compilation!
+
+> If we want to counter this we need to append the operator '?' to the type as follows.
+
+```kotlin 
+val a: String? = null // null is possible
+```
+
+> Now a can hold the value null
 
 ### What are lambda expressions and higher order functions in Kotlin? Why would you store a function inside a variable? (0,5 points)
 
