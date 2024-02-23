@@ -44,10 +44,13 @@ two integers are taken and their sum is returned through the lamda expression.
 ```kotlin 
 val sum = { a: Int, b: Int -> a + b }
 ```
-
-
-
-
+A Higher-order function is able to either take another function as paramter and/or to return a function. This enables functional programming patterns (Examples for these are: map and filter).
+Example:
+```kotlin 
+val numbers = listOf(1, 2, 3)
+val numbersDouble = numbers.map { it * 2 }// <- Lamda expression
+```
+Storing a function in a variable allows for: Reusability, Flexibilty and Encapsulation.
 </span>
 
 ### Provide a solution for the following number guessing game inside `App.kt`. (3 points)
