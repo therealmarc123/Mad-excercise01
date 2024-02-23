@@ -38,19 +38,29 @@ Now a can hold the value null
 ### What are lambda expressions and higher order functions in Kotlin? Why would you store a function inside a variable? (0,5 points)
 
 <span style="color:blue">The Lambda expressions are short, anonymous functions defined with {} and can take parameters and return values. It is possible to use Lambda expressions wherever a function type is expected.
-The full syntax includes the parameter names, an arrow ->, and the body of the function. For example:
+The full syntax includes the parameter names, an arrow ->, and the body of the function. For Example:
 
 two integers are taken and their sum is returned through the lamda expression.
 ```kotlin 
 val sum = { a: Int, b: Int -> a + b }
 ```
 A Higher-order function is able to either take another function as paramter and/or to return a function. This enables functional programming patterns (Examples for these are: map and filter).
+
 Example:
+map is a higher-order function due to it taking a function as an argument.
 ```kotlin 
 val numbers = listOf(1, 2, 3)
 val numbersDouble = numbers.map { it * 2 }// <- Lamda expression
 ```
+
 Storing a function in a variable allows for: Reusability, Flexibilty and Encapsulation.
+
+Example:
+the lamda expression is stored in a variable
+```kotlin 
+val welcome: (String) -> String = { name -> "Welcome, $name"}//lamda expression is stored in a variable
+println(welcome("Marc"))
+```
 </span>
 
 ### Provide a solution for the following number guessing game inside `App.kt`. (3 points)
